@@ -20,14 +20,15 @@ class Data_digits:
             plt.xticks([]);
             plt.yticks([])
             plt.title("image {}".format(i + 1))
-        plt.suptitle("숫자 0과 1 이미지")
+        plt.suptitle("test_2.png")
         plt.tight_layout()
         plt.show()
 
     def vector_image(self):
-        v = []
-        for i in range(8):
-            v.append(self.d[i].reshape(64, 1))  # 벡터화
+        v = [self.d[i].reshape(64,1) for i in range(0)]
+
+        # for i in range(8):
+        # v.append(self.d[i].reshape(64, 1))  # 벡터화
 
         plt.figure(figsize=(8, 3))
         for i in range(8):
